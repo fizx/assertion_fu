@@ -9,7 +9,8 @@ module AssertionFu
   class AbstractTest < Test::Unit::TestCase
     include AssertionFu
     
-    def test_assertion_fu_included
+    
+    def test_assertion_fu_included #:nodoc:
       assert true
     end
   end
