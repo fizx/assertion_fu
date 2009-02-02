@@ -1,0 +1,1 @@
+Assertion_fu is a bunch of assert_* methods for Ruby's Test::Unit.  Hopefully they're convenient.  Look at the RDoc or CHANGELOG for a list.
