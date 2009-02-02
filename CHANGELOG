@@ -1,2 +1,7 @@
-0.1.0
+0.0.0
   - initial version (no methods)
+0.1.0
+  - assert_file_includes
+  - assert_file_doesnt_include
+  - assert_file_exists
+  - assert_file_doesnt_exist
