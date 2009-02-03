@@ -15,4 +15,8 @@ class AssertionFuTest < Test::Unit::TestCase #:nodoc:
     assert_file_includes(__FILE__, /__FILE__/)
     assert_file_doesnt_include(__FILE__, /dafaf{999}/)
   end
+  
+  def test_length
+    assert_length 3, %w[a b c]
+  end
 end
