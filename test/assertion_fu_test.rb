@@ -19,4 +19,14 @@ class AssertionFuTest < Test::Unit::TestCase #:nodoc:
   def test_length
     assert_length 3, %w[a b c]
   end
+  
+  def test_xml
+    assert_xml_equal(%[<a />], %[<a />])
+    assert_xml_equal(%[<a  b="c"/>], %[<a b="c"/>])
+    assert_xml_equal(%[<a b="c" c="d"/>], %[<a c="d" b="c"/>])
+    assert_raises(Test::Unit::AssertionFailedError) do
+      assert_xml_not_equal(%[<a b="c" c="d"/>], %[<a c="d" b="c"/>])
+    end
+    assert_xml_not_equal(%[<a b="c" c="d"/>], %[<z c="d" b="c"/>])
+  end
 end

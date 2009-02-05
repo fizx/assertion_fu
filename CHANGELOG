@@ -5,7 +5,12 @@
   - assert_file_doesnt_include
   - assert_file_exists
   - assert_file_doesnt_exist
-0.2.0  
+0.2.0
   - assert_length
   - assert_includes
   - assert_doesnt_include
+0.3.0
+  - optional libxml dependency
+  - assert_xml_equal
+  - assert_xml_not_equal
+  - assert_same_path
